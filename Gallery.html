@@ -3,25 +3,146 @@
   <head>
     <meta charset="utf-8">
     <title>Afia-nails</title>
-  </head>
-  <body >
-    <h1 class = "gallaryhead">Gallery</h1>
+    
+    <style>
+  body{
+    background-image: url("https://i.pinimg.com/564x/b3/5d/08/b35d08620b220c57d986b2af882a033f.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+      }
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0; /* Position the sidebar on the right */
+    background-color: #F5F7F8;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
 
-    <div class = "picsgallary1">
-      <img  src="images/afia1.jpg" alt="">
-    </div>
-    <div class = "picsgallary3">
-      <img  src="images/afia3.jpg" alt="">
-    </div>
-    <div class = "picsgallary4">
-      <img  src="images/afia4.jpg" alt="">
-    </div>
-    <div class = "picsgallary5">
-      <img  src="images/afia5.jpg" alt="">
-    </div>
-    <div class = "picsgallary6">
-      <img  src="images/afia6.jpg" alt="">
-    </div>
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #0F0F0F;
+  display: block;
+  transition: 0.1s;
+}
+
+.sidebar a:hover {
+  color: blue;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px; /* Adjust the position of the close button */
+  font-size: 36px;
+  margin-right: 50px; /* Increase the margin to prevent overlap with content */
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: inherit;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.openbtn:hover {
+  background-color: inherit;
+}
+
+#main {
+  transition: margin-right .5s; /* Adjust the transition property */
+  padding: 16px;
+}
+
+.gallaryhead{
+  padding-left: 30%;
+  font-family: cursive;
+}
+.image-container {
+  width: 250px; 
+  height: 270px; 
+  margin: 20px; 
+
+}
+
+
+#image1 {
+    border: 2px solid red;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5)
+}
+
+#image3 {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); 
+    border-radius: 10px; 
+
+}
+
+#image4 {
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5)
+    
+}
+#image5 {
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5)
+    
+}
+
+#image6 {
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5)
+    
+}
+
+
+      
+    </style>
+  </head>
+  
+  <body >
+    <header>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="services.html">Services & Pricelist</a>
+        <a href="Contact.html">Contact</a>
+        <a href="#">Careers</a>
+      </div>
+      
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>
+       
+        <script src ="script.js"></script>
+      </div>
+    </header>
+    <h1 class = "gallaryhead"><strong>Gallery</strong></h1>
+    
+    <img src="images/afia1.jpg" alt="" class="image-container" id="image1">
+
+    <img src="images/afia3.jpg" alt="" class="image-container" id="image3">
+  
+    <img src="images/afia4.jpg" alt="" class="image-container" id="image4">
+  
+    <img src="images/afia5.jpg" alt="" class="image-container" id="image5">
+  
+    <img src="images/afia6.jpg" alt="" class="image-container" id="image6">
+  
     
   </body>
 </html>
